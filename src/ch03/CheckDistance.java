@@ -1,5 +1,7 @@
 package ch03;
 
+import java.util.Arrays;
+
 /**
  * 거리두기 확인하기 - Level2
  *
@@ -113,6 +115,14 @@ public class CheckDistance {
     }
 
     public static void main(String[] args) {
+        String[][] places = new String[][]{
+                new String[]{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"},
+                new String[]{"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"},
+                new String[]{"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"},
+                new String[]{"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"},
+                new String[]{"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}
+        };
 
+        System.out.println(Arrays.toString(solution(places)));
     }
 }
