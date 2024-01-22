@@ -44,7 +44,7 @@ public class TernaryReverse {
         }
 
         // 위에 스택을 통해 구현한 소스를 Integer.toString(int, radix) 메소드를 활용하면 아주 쉽게 정수를 radix 진법의 문자열로 변경 가능하다
-        // StringBuilder sb = new StringBuilder(Intege다.toString(n, 3));
+        // StringBuilder sb = new StringBuilder(Integer.toString(n, 3));
 
         String ternaryReverseString = sb.reverse().toString();  // 반전된 수
         int ternaryReverse = Integer.parseInt(ternaryReverseString, 3);
